@@ -6,6 +6,13 @@ body {
     font-family: "游ゴシック Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
     line-height: 1.6;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 画面全体の高さを確保 */
+}
+
+#outer {
+    flex: 1; /* コンテンツ部分をフレックスで伸縮可能に */
 }
 
 #header-container {
@@ -37,11 +44,14 @@ h1 {
     margin: 0.5em 0 1em 0;
 }
 
-h2 {
+h2, h3, h4 {
     font-size: 20px;
     margin: 10px 0;
     padding: 4px 0;
     border-bottom: 1px solid #999;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* スマホで長い単語を折り返す */
+    white-space: normal;
 }
 
 #content-wrapper {
@@ -78,8 +88,10 @@ p {
         font-size: 20px;
     }
     
-    h2 {
+    h2, h3, h4 {
         font-size: 18px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     #content-wrapper, #header-container {
@@ -91,10 +103,14 @@ p {
     }
 }
 
+/* フッターの修正 */
 footer {
     font-size: 14px;
-    height: 80px;
+    height: auto; /* 高さ固定を解除 */
+    padding: 20px;
     clear: both;
     text-align: center;
-    padding: 20px;
+    background-color: #214555;
+    color: white;
+    margin-top: auto; /* フッターを画面下部に配置 */
 }
