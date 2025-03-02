@@ -23,11 +23,13 @@ body {
 
 header {
     background-color: #A7E0A3; /* パステルグリーン */
+    color: #1E3A5F; /* ディープブルー */
     padding: 15px;
     text-align: center;
 }
 
 #head-inner {
+    color: #1E3A5F; /* ディープブルー */
     padding: 10px 0;
 }
 
@@ -35,12 +37,12 @@ h1 {
     font-size: 22px;
     font-weight: bold;
     margin: 0;
-    color: #f3e6d2;
+    color: #1E3A5F; /* ディープブルー */
 }
 
 .description {
     line-height: 1.4;
-    color: #f3f2eb;
+    color: #1E3A5F; /* ディープブルー */
     margin: 0.5em 0 1em 0;
 }
 
@@ -103,14 +105,13 @@ p {
     }
 }
 
-/* フッターの修正 */
 footer {
+    background-color: #A7E0A3; /* パステルグリーン */
+    color: #1E3A5F; /* ディープブルー */
     font-size: 14px;
-    height: auto; /* 高さ固定を解除 */
+    height: auto;
     padding: 20px;
     clear: both;
     text-align: center;
-    background-color: #A7E0A3; /* パステルグリーン */
-    color: white;
-    margin-top: auto; /* フッターを画面下部に配置 */
+    margin-top: auto;
 }
